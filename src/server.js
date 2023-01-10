@@ -13,8 +13,8 @@ require('dotenv').config();
 //    credentials:true,            //access-control-allow-credentials:true
 //    optionSuccessStatus:200,
 // }
-var express = require('express')
-var cors = require('cors')
+// var express = require('express')
+// var cors = require('cors')
 var app = express()
  
 var corsOptions = {

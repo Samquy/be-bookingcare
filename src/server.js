@@ -6,22 +6,22 @@ import connectDB from "./config/connectDB";
 import cors from 'cors'
 require('dotenv').config();
 
-// let app = express();
+let app = express();
 // const cors=require("cors");
-// const corsOptions ={
-//    origin:'*', 
-//    credentials:true,            //access-control-allow-credentials:true
-//    optionSuccessStatus:200,
-// }
+const corsOptions ={
+   origin:'*', 
+   credentials:true,            //access-control-allow-credentials:true
+   optionSuccessStatus:200,
+}
 // var express = require('express')
 // var cors = require('cors')
-var app = express()
+// var app = express()
  
-var corsOptions = {
-  origin: 'https://be-bookingcare-production.up.railway.app',
-  credentials:true, 
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+// var corsOptions = {
+//   origin: 'https://be-bookingcare-production.up.railway.app',
+//   credentials:true, 
+//   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+// }
 app.use(cors(corsOptions)) // Use this after the variable declaration
 // app.use(cors({ credentials: true, origin: '*',optionSuccessStatus:200, }))
 // app.use(bodyParser.json());

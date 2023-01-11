@@ -24,13 +24,22 @@ module.exports = {
                 type: Sequelize.INTEGER
             },
             createdAt: {
-                allowNull: false,
-                type: Sequelize.DATE
+                type: Sequelize.DATEONLY,
+                field: 'createdat',
             },
             updatedAt: {
-                allowNull: false,
-                type: Sequelize.DATE
-            }
+                type: Sequelize.DATEONLY,
+                field: 'updatedat'
+                },
+
+//             createdAt: {
+//                 allowNull: false,
+//                 type: Sequelize.DATE
+//             },
+//             updatedAt: {
+//                 allowNull: false,
+//                 type: Sequelize.DATE
+//             }
         });
     },
     down: async (queryInterface, Sequelize) => {
